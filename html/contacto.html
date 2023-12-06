@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- imagen de pagina y coneccion con google fonts -->
+    <title>ACURA / CONTACTO</title>
+    <link rel="shortcut icon" href="../assets/logoacura2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header con logo y links de navegacion -->
+    <header id="header">       
+        <div class="logo_header_acura">
+            <a href="../index.html" id="logo_header_acura">
+                <img src="../assets/logo_acura2.3.png" alt="logo consecionario">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>  
+                    <a href="../html/modelos.html"> <b>MODELOS</b></a>
+                    <a href="#"><b>CONTACTO</b></a>
+                    <a href="../html/nosotros.html"><b>NOSOTROS</b></a>
+                    <a href="../html/service.html"><b>SERVICE</b></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo_header_ubicacion">
+            <a href="../index.html#ubicacion_abajo" id="logo_header_ubicacion"><img src="../assets/logoubicacion2.1.png" alt="logo de ubicacion"></a>
+        </div>
+    </header>
+    <!--main-->
+    <MAIN>
+        <!-- caja de cotacto por correo  -->
+        <H1>CONTACTO</H1>
+        <form class="contacto_caja">
+            <div class="caja">
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="caja">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="caja">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form> 
+        <!-- intento de generar circulos con imagenes dentro  -->
+        <div class="general_de_circulos">
+            <div class="circulos">
+                <div class="imagenes_de_circulo">
+                    <div class="interior_circulo">
+                        <img src="../assets/logoyoutube.png" alt="logo youtube">
+                    </div>
+                    <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a>
+                </div>
+                <div class="imagenes_de_circulo">
+                    <div class="interior_circulo">
+                        <img src="../assets/logoinstagram.png" alt="logo instagram">
+                    </div>
+                    <a href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+                </div>
+                <div class="imagenes_de_circulo">
+                    <div class="interior_circulo">
+                        <img src="../assets/logofacebook.png" alt="logo facebook">
+                    </div>
+                    <a href="https://www.facebook.com/" target="_blank">FACEBOOK</a>
+                </div>
+    </MAIN>
+    <div class="linea"></div>
+    <!-- footer que direccion a redes sociales y a pagina principal -->
+    <footer>
+        <div>
+            <a href="#header" id="footer_logo"><img src="../assets/logoacura2.png" alt="logo consecionario"></a>
+        </div>
+        <nav class="redes_sociales">
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" id="youtube"><img src="../assets/logoyoutube.png" alt="logo de youtube"></a>
+                    <a href="/html/contacto.html" target="_blank" id="correo"><img src="../assets/logocorreo.png" alt="logo de correo"></a>
+                    <a href="https://www.instagram.com" target="_blank" id="instagram"><img src="../assets/logoinstagram.png" alt="logo de instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank" id="facebook"><img src="../assets/logofacebook.png" alt="logo de facebook"></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
