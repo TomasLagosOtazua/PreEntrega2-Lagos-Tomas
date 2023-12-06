@@ -1,5 +1,12 @@
-
+* p {
+  font-size: 15px;
+}
 /* index */
+html {
+  font-size: 62.5%
+}
+
+
 body {
     background-color: white;
     margin: 0;
@@ -20,6 +27,7 @@ header nav ul li a{
     margin-right: 4rem;
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
+    font-size: 20px;
     color: black;
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s;
@@ -66,6 +74,20 @@ header nav ul {
   margin-right: 60px;
 }
 
+/* media queries */
+
+@media only screen and (max-width: 600px){
+  header {
+    flex-direction: row;
+    text-align: center;
+  } 
+
+  header nav ul {
+    display: flex;
+    column-gap: 10px;
+  }
+}
+
 
 /* main */
 .main_index {
@@ -96,17 +118,27 @@ header nav ul {
   align-items: center;
 }
 
-.auto_presentacion {
-  justify-content: left;
-  display: flex;
+#auto_presentacion {
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #texto_presentacion {
-  text-decoration: underline;
-  display: inline;
+  display: block;
+  padding-left: 30px;
+  text-align: center;
 }
 
 /* mapa google */
+
+#ubicacion_abajo {
+  text-align: center;
+  text-decoration: underline;
+}
 
 .mapa {
   align-items: center;
@@ -178,6 +210,17 @@ footer {
 #youtube img {
   width: 60px;
   height: 55px;
+}
+
+@media (min-width: 780px){
+  footer {
+    flex-direction: row;
+  } 
+
+  footer nav ul {
+    display: flex;
+    column-gap: 10px;
+  }
 }
 
 

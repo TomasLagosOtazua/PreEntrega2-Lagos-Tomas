@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- imagen de pagina y coneccion con google fonts -->
     <title>ACURA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/logoacura2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,24 +37,51 @@
     </header>
     <!-- main -->
     <main class="main_index">
-        <div class="toyota-86-gr">
-            <img src="assets/toyota-86-gr.jpg" alt="toyota 86 rojo">
-        </div>
-        <div class="toyota_descripcion">
-            <h1 id="titulo_toyota">NUEVO TOYOTA GR86</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum magnam amet temporibus dicta necessitatibus assumenda excepturi asperiores, recusandae pariatur
-            provident harum porro voluptate ullam facilis. Eum qui temporibus quisquam nobis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus nam qui quisquam libero, natus vero! Quam libero, 
-            fugiat quae numquam doloremque optio illum laborum accusantium enim earum, ut, molestias natus?</p>
-        </div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/toyota-86-gr.jpg" class="d-block w-100" alt="toyota gr86">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TOYOTA GR86</h5>
+                  <p>lo mas nuevo en deportividad</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/interior toyota gr86.jpg" class="d-block w-100" alt="interior gr86">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>NUEVO INTERIOR</h5>
+                  <p>el mas equipado en tecnologia</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/motortoyota.jpg" class="d-block w-100" alt="motor toyota 96">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>NUEVO MOTOR</h5>
+                  <p>mas eficiencia y poder</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
         <div>
-            <img src="assets/golf typeR.jpg" alt="golf typeR" class="auto_presentacion">
+            <img src="assets/golf typeR.jpg" alt="golf typeR" id="auto_presentacion">
                 <div id="texto_presentacion">
                     <h2>GOLF TYPE R</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium esse sequi fugit blanditiis optio et quam,
-                    corrupti dolorem a dicta illum veniam fuga autem, perferendis odit! Iusto consectetur voluptate perferendis!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque nisi provident aliquid qui veritatis totam ex 
-                    eius quam repellendus quidedsdsm, doloribus expedita modi consequatur dolore animi quia repudiandae temporibus ad!
+                    <p>
+                      Sumérgete en la experiencia definitiva de conducción con el Volkswagen Golf GTI, un ícono que ha elevado el estándar de los autos deportivos compactos desde su debut. Con su diseño elegante y su rendimiento impresionante, el Golf GTI no solo es un automóvil, es una declaración de estilo y pasión por la carretera!
                     </p>
                 </div>
         </div>
@@ -84,5 +112,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
